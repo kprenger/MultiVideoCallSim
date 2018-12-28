@@ -7,7 +7,7 @@ The app simulates a video call using basic `UILabel`s with differing `background
 
 The app does not simulate users leaving out of the order they were added in, but that case _should_ be handled gracefully by the code as written. User videos would just shuffle around to fill the gaps in the expected order.
 
-Potential additions:
+### Potential additions:
 - [ ] Touching a user's view makes that specific user leave (simulating user's leaving out of order)
 - [ ] Animating the stack view changes
 - [ ] Adding stock photos instead of solid color `UILabel`'s to represent user videos
