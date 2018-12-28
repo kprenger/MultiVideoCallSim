@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiVideoCallSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QoP-lZ-laE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="topStack" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zye-Me-8JB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sjt-1V-z9G">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="333.5"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-hK-qDZ">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="333.5"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SbD-le-fgZ">
+                                        <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lb7-JW-DvL">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="333.5"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-Hx-vVc">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="333.5"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Video Preview" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-TM-vcm">
+                                <rect key="frame" x="197" y="437" width="148" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.58567780623532495" blue="0.85936067314090281" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="G5x-5N-X38"/>
+                                    <constraint firstAttribute="width" constant="148" id="Kwk-OA-imb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-ga-RHl">
+                                <rect key="frame" x="30" y="619" width="116" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Remove User">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCI-L5-eDZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poU-Qf-ahz">
+                                <rect key="frame" x="229" y="619" width="116" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add User">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOS-Hb-qJb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QoP-lZ-laE" secondAttribute="bottom" id="27A-RV-Gle"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Asf-ga-RHl" secondAttribute="bottom" constant="12" id="8q8-Yy-P0f"/>
+                            <constraint firstItem="poU-Qf-ahz" firstAttribute="leading" secondItem="Asf-ga-RHl" secondAttribute="trailing" constant="83" id="Dvj-t5-Cwd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QoP-lZ-laE" secondAttribute="trailing" id="OvB-05-h0h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="poU-Qf-ahz" secondAttribute="bottom" constant="12" id="RgX-gy-Y7s"/>
+                            <constraint firstItem="QoP-lZ-laE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dgd-fX-Z9c"/>
+                            <constraint firstItem="QoP-lZ-laE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iKE-bL-bHM"/>
+                            <constraint firstItem="Asf-ga-RHl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="mcE-Cb-bje"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Obd-TM-vcm" secondAttribute="trailing" constant="30" id="sbf-0D-aVL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="poU-Qf-ahz" secondAttribute="trailing" constant="30" id="xej-al-Omn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Obd-TM-vcm" secondAttribute="bottom" constant="30" id="xiO-rT-VIw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="poU-Qf-ahz" id="6KW-mk-9jR"/>
+                        <outlet property="bottomLeftStack" destination="lb7-JW-DvL" id="Ksd-tj-9dr"/>
+                        <outlet property="bottomRightStack" destination="fXb-Hx-vVc" id="1sb-Px-vNQ"/>
+                        <outlet property="bottomStack" destination="SbD-le-fgZ" id="c8w-LM-nsv"/>
+                        <outlet property="myPreview" destination="Obd-TM-vcm" id="1Cp-IZ-Ugf"/>
+                        <outlet property="removeButton" destination="Asf-ga-RHl" id="anP-YS-sS2"/>
+                        <outlet property="stackView" destination="QoP-lZ-laE" id="k07-kD-UWg"/>
+                        <outlet property="topLeftStack" destination="sjt-1V-z9G" id="aid-QZ-7HM"/>
+                        <outlet property="topRightStack" destination="vYj-hK-qDZ" id="y4d-Kp-MIV"/>
+                        <outlet property="topStack" destination="Zye-Me-8JB" id="5yf-Jy-3yH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
